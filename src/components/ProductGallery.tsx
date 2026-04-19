@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ZoomIn } from 'lucide-react';
+import { banners } from '../constants/stockImages';
 
 interface Product {
   id: number;
@@ -18,7 +19,10 @@ export default function ProductGallery({ title, category, products }: ProductGal
     <div className="pt-[100px] lg:pt-[128px]">
       {/* Page Title Banner */}
       <section className="relative py-24 bg-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/productheader/1920/600')] bg-cover bg-center opacity-30" />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url('${banners.fabricRack}')` }}
+        />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">{title}</h1>
           <div className="flex justify-center items-center gap-2 text-white/70 text-sm font-bold uppercase tracking-widest">

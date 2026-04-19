@@ -1,12 +1,16 @@
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
+import { banners, pexelsPhoto } from '../../constants/stockImages';
 
 export default function CompanyProfile() {
   return (
     <div className="pt-[100px] lg:pt-[128px]">
       {/* Page Title Banner */}
       <section className="relative py-24 bg-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/header/1920/600')] bg-cover bg-center opacity-30" />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url('${banners.workshop}')` }}
+        />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Company Profile</h1>
           <div className="flex justify-center items-center gap-2 text-white/70 text-sm font-bold uppercase tracking-widest">
@@ -66,7 +70,7 @@ export default function CompanyProfile() {
             <div className="w-full lg:w-2/5 space-y-8">
                <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
                   <img 
-                    src="https://picsum.photos/seed/profile/800/1000" 
+                    src={pexelsPhoto(5632402, 1200)} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                     alt="Production"
                     referrerPolicy="no-referrer"

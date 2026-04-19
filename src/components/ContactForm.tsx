@@ -1,5 +1,6 @@
 import { User, Mail, Phone, FileText } from 'lucide-react';
 import { motion } from 'motion/react';
+import { pexelsPhoto } from '../constants/stockImages';
 
 export default function ContactForm() {
   return (
@@ -8,7 +9,7 @@ export default function ContactForm() {
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="w-full lg:w-1/2 relative">
              <img 
-                src="https://picsum.photos/seed/contactimg/800/1000" 
+                src={pexelsPhoto(3739748, 1200)} 
                 className="w-full h-full object-cover rounded-2xl shadow-2xl" 
                 alt="Support"
                 referrerPolicy="no-referrer"

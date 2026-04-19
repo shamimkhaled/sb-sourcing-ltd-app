@@ -4,6 +4,7 @@ import { Calendar, User, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { banners } from '../constants/stockImages';
 
 const news = [
   {
@@ -11,21 +12,21 @@ const news = [
     excerpt: 'How we are adapting sustainable practices in our production line to protect the environment...',
     date: 'Oct 20, 2025',
     author: 'Admin',
-    image: 'https://picsum.photos/seed/news1/600/400'
+    image: banners.fashionStudio
   },
   {
     title: 'New Trends in Knitwear for 2026',
     excerpt: 'Exploring the latest designs and fabrics that will dominate the knitwear market next season...',
     date: 'Nov 06, 2025',
     author: 'Designer',
-    image: 'https://picsum.photos/seed/news2/600/400'
+    image: banners.logisticsApparel
   },
   {
     title: 'S.B Sourcing Wins Quality Award',
     excerpt: 'We are proud to announce that our quality control team has been recognized for excellence...',
     date: 'Dec 15, 2025',
     author: 'Owner',
-    image: 'https://picsum.photos/seed/news3/600/400'
+    image: banners.textileFlatlay
   }
 ];
 

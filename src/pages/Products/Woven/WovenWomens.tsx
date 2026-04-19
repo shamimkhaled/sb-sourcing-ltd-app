@@ -1,8 +1,14 @@
 import ProductGallery from '../../../components/ProductGallery';
-const products = [
-  { id: 51, title: 'Women\'s Dress 01', image: 'https://picsum.photos/seed/wvw1/600/800' },
-  { id: 52, title: 'Women\'s Skirt 02', image: 'https://picsum.photos/seed/wvw2/600/800' },
-];
+import { pexelsPhoto, productShowcaseIds } from '../../../constants/stockImages';
+
+const titles = ["Women's Dress 01", "Women's Skirt 02"];
+
+const products = titles.map((title, i) => ({
+  id: 51 + i,
+  title,
+  image: pexelsPhoto(productShowcaseIds.wovenWomens[i], 800),
+}));
+
 export default function WovenWomens() {
   return <ProductGallery title="Woven – Women’s" category="Woven Wear" products={products} />;
 }

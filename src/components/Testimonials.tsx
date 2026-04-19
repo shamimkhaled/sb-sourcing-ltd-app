@@ -3,25 +3,26 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import { Quote, Star } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { testimonialPortraits } from '../constants/stockImages';
 
 const feedback = [
   {
     name: 'Stive Jhonson',
     role: 'Procurement Manager',
     feedback: 'Excellent service and product quality. S.B Sourcing has been our reliable partner for over 5 years. Their attention to detail in quality control is unmatched.',
-    image: 'https://picsum.photos/seed/person1/100/100'
+    image: testimonialPortraits.a
   },
   {
     name: 'Alina Lora',
     role: 'Fashion Designer',
     feedback: 'The sampling process is very efficient. They understand our design requirements perfectly and delivery high-quality samples within the promised timeline.',
-    image: 'https://picsum.photos/seed/person2/100/100'
+    image: testimonialPortraits.b
   },
   {
     name: 'Donald Frew',
     role: 'Retail Owner',
     feedback: 'We highly recommend S.B Sourcing for their professional approach and deep knowledge of the garment industry in Bangladesh. They make sourcing trouble-free.',
-    image: 'https://picsum.photos/seed/person3/100/100'
+    image: testimonialPortraits.c
   }
 ];
 

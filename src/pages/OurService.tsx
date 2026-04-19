@@ -1,5 +1,6 @@
 import { Handshake, Search, Package, ClipboardCheck, Ship, Headphones, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
+import { banners, pexelsPhoto } from '../constants/stockImages';
 
 const fullServices = [
   {
@@ -39,7 +40,10 @@ export default function OurService() {
     <div className="pt-[100px] lg:pt-[128px]">
       {/* Page Title Banner */}
       <section className="relative py-24 bg-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/service/1920/600')] bg-cover bg-center opacity-30" />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url('${banners.tailoring}')` }}
+        />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Our Services</h1>
           <div className="flex justify-center items-center gap-2 text-white/70 text-sm font-bold uppercase tracking-widest">
@@ -102,7 +106,7 @@ export default function OurService() {
                 <div className="lg:w-1/2">
                    <div className="relative">
                       <img 
-                        src="https://picsum.photos/seed/service2/800/500" 
+                        src={pexelsPhoto(6620820, 1200)} 
                         className="rounded-3xl shadow-2xl" 
                         alt="Support"
                         referrerPolicy="no-referrer"

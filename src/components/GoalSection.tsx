@@ -1,23 +1,24 @@
 import { Target, ShieldCheck, Smile } from 'lucide-react';
 import { motion } from 'motion/react';
+import { pexelsPhoto } from '../constants/stockImages';
 
 const goals = [
   {
     title: 'Develop Strong Supplier Relationships',
     icon: <ShieldCheck size={40} />,
-    image: 'https://picsum.photos/seed/goal1/600/400',
+    image: pexelsPhoto(5698857, 900),
     delay: 0
   },
   {
     title: 'Ensure Product Quality',
     icon: <Target size={40} />,
-    image: 'https://picsum.photos/seed/goal2/600/400',
+    image: pexelsPhoto(6626903, 900),
     delay: 0.1
   },
   {
     title: 'Enhance Customer Satisfaction',
     icon: <Smile size={40} />,
-    image: 'https://picsum.photos/seed/goal3/600/400',
+    image: pexelsPhoto(7671169, 900),
     delay: 0.2
   }
 ];

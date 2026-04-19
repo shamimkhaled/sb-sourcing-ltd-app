@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone, Mail, MapPin, ShoppingBag } from 'lucide-react';
+import { Menu, X, ChevronDown, Phone, Mail, MapPin } from 'lucide-react';
 import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -168,18 +168,12 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <div className="flex items-center gap-6">
-              <button className="relative text-secondary hover:text-primary transition-colors p-2">
-                 <ShoppingBag size={20} />
-                 <span className="absolute top-0 right-0 w-4 h-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">0</span>
-              </button>
-              <Link
-                to="/contact-us"
-                className="bg-primary hover:bg-red-700 text-white px-6 py-2.5 rounded-sm text-sm font-bold uppercase tracking-wide transition-all shadow-lg hover:shadow-primary/20 transform hover:-translate-y-0.5 active:translate-y-0"
-              >
-                Contact Us
-              </Link>
-            </div>
+            <Link
+              to="/contact-us"
+              className="bg-primary hover:bg-red-700 text-white px-6 py-2.5 rounded-sm text-sm font-bold uppercase tracking-wide transition-all shadow-lg hover:shadow-primary/20 transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+              Contact Us
+            </Link>
           </div>
 
 
@@ -238,13 +232,6 @@ export default function Navbar() {
                     )}
                   </div>
                 ))}
-                <div className="flex items-center justify-between py-4 border-b border-gray-50">
-                  <span className="text-secondary font-bold uppercase tracking-wide text-sm">Shopping Cart</span>
-                  <button className="relative text-secondary p-2">
-                    <ShoppingBag size={20} />
-                    <span className="absolute top-0 right-0 w-4 h-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">0</span>
-                  </button>
-                </div>
                 <Link to="/contact-us" className="block w-full text-center bg-primary text-white py-3 rounded-sm font-bold uppercase tracking-wide text-sm mt-4">Contact Us</Link>
               </div>
             </motion.div>

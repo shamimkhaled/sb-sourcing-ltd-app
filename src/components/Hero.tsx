@@ -5,17 +5,18 @@ import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import { banners } from '../constants/stockImages';
 
 const slides = [
   {
-    image: 'https://picsum.photos/seed/garments1/1920/1080',
+    image: banners.apparelRetail,
     title: 'S.B SOURCING',
     description: '100% export-oriented readymade clothing supplier and apparel sourcing agent based in Dhaka, Bangladesh',
     buttonText: 'About Us',
     link: '/company-profile'
   },
   {
-    image: 'https://picsum.photos/seed/garments2/1920/1080',
+    image: banners.sewingFloor,
     title: 'QUALITY & EXCELLENCE',
     description: 'Garments manufacturer, supplier & quality control company with BSCI, Sedex, WRAP certifications.',
     buttonText: 'Our Services',

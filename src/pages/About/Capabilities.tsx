@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Settings, CheckSquare, Factory, BarChart3 } from 'lucide-react';
+import { banners, pexelsPhoto } from '../../constants/stockImages';
 
 const stats = [
   { label: 'Flat Knitwear (Sweater)', value: '5 Million', suffix: 'pcs/year', icon: <Settings size={28} /> },
@@ -12,7 +13,10 @@ export default function Capabilities() {
     <div className="pt-[100px] lg:pt-[128px]">
       {/* Page Title Banner */}
       <section className="relative py-24 bg-secondary overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/caps/1920/600')] bg-cover bg-center opacity-30" />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: `url('${banners.productionOverview}')` }}
+        />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Our Capabilities</h1>
           <div className="flex justify-center items-center gap-2 text-white/70 text-sm font-bold uppercase tracking-widest">
@@ -80,7 +84,7 @@ export default function Capabilities() {
              </div>
              <div className="relative">
                 <img 
-                  src="https://picsum.photos/seed/capacity/800/600" 
+                  src={pexelsPhoto(6626903, 1200)} 
                   className="rounded-2xl shadow-2xl overflow-hidden" 
                   alt="Production Floor"
                   referrerPolicy="no-referrer"

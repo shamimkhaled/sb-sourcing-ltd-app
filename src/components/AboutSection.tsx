@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { pexelsPhoto } from '../constants/stockImages';
 
 export default function AboutSection() {
   return (
@@ -39,7 +40,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                src="https://picsum.photos/seed/about1/400/500" 
+                src={pexelsPhoto(6620820, 800)} 
                 className="w-full rounded-2xl shadow-2xl" 
                 alt="Working"
                 referrerPolicy="no-referrer"
@@ -48,7 +49,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                src="https://picsum.photos/seed/about2/400/300" 
+                src={pexelsPhoto(6620822, 800)} 
                 className="w-full rounded-2xl shadow-xl" 
                 alt="Fabric"
                 referrerPolicy="no-referrer"
@@ -59,7 +60,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                src="https://picsum.photos/seed/about3/400/300" 
+                src={pexelsPhoto(6620823, 800)} 
                 className="w-full rounded-2xl shadow-xl" 
                 alt="Design"
                 referrerPolicy="no-referrer"
@@ -68,7 +69,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                src="https://picsum.photos/seed/about4/400/500" 
+                src={pexelsPhoto(6620824, 800)} 
                 className="w-full rounded-2xl shadow-2xl" 
                 alt="Production"
                 referrerPolicy="no-referrer"

@@ -1,18 +1,25 @@
 import ProductGallery from '../../../components/ProductGallery';
+import { pexelsPhoto, productShowcaseIds } from '../../../constants/stockImages';
 
-const products = [
-  { id: 21, title: 'Women\'s Top 01', image: 'https://picsum.photos/seed/ktw1/600/800' },
-  { id: 22, title: 'Women\'s Knit Dress 02', image: 'https://picsum.photos/seed/ktw2/600/800' },
-  { id: 23, title: 'Women\'s Cardigan 03', image: 'https://picsum.photos/seed/ktw3/600/800' },
-  { id: 24, title: 'Women\'s Hoodie 04', image: 'https://picsum.photos/seed/ktw4/600/800' },
+const titles = [
+  "Women's Top 01",
+  "Women's Knit Dress 02",
+  "Women's Cardigan 03",
+  "Women's Hoodie 04",
 ];
+
+const products = titles.map((title, i) => ({
+  id: 21 + i,
+  title,
+  image: pexelsPhoto(productShowcaseIds.knitWomens[i], 800),
+}));
 
 export default function KnitWomens() {
   return (
-    <ProductGallery 
-      title="Knit – Women’s" 
-      category="Knitwear" 
-      products={products} 
+    <ProductGallery
+      title="Knit – Women’s"
+      category="Knitwear"
+      products={products}
     />
   );
 }
