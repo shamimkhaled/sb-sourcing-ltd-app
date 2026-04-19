@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Quote } from 'lucide-react';
+import ownerPortrait from '../../assets/img/sb-sourcing-owner.jpg';
 
 export default function ChairmanMessage() {
   return (
@@ -24,11 +25,10 @@ export default function ChairmanMessage() {
           <div className="flex flex-col lg:flex-row gap-16 items-start">
              <div className="w-full lg:w-1/2 relative group">
                 <div className="absolute -top-10 -left-10 w-full h-full border-4 border-primary rounded-2xl group-hover:top-0 group-hover:left-0 transition-all duration-500 -z-0" />
-                <img 
-                  src="https://picsum.photos/seed/owner/800/1000" 
-                  className="w-full rounded-2xl shadow-2xl relative z-10" 
-                  alt="Chairman"
-                  referrerPolicy="no-referrer"
+                <img
+                  src={ownerPortrait}
+                  className="w-full h-auto rounded-2xl shadow-2xl relative z-10"
+                  alt="Salah Uddin, Owner and CEO, S.B Sourcing"
                 />
                 <div className="absolute bottom-10 right-10 bg-primary p-6 text-white z-20 rounded-sm shadow-xl">
                    <h4 className="text-2xl font-black italic">Salah Uddin</h4>
