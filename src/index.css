@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Poppins", sans-serif;
+
+  --color-primary: #f48120;
+  --color-secondary: #1a1a1a;
+  --color-accent: #f37021;
+  
+  --animate-case-fade-in-up: case-fade-in-up 1s ease-out forwards;
+}
+
+@keyframes case-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary bg-[#f5f3f0];
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
