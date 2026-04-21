@@ -40,7 +40,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                src={pexelsPhoto(6620820, 800)} 
+                src={pexelsPhoto(7213441, 800)} 
                 className="w-full rounded-2xl shadow-2xl" 
                 alt="Working"
                 referrerPolicy="no-referrer"
@@ -49,7 +49,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                src={pexelsPhoto(6620822, 800)} 
+                src={pexelsPhoto(5632402, 800)} 
                 className="w-full rounded-2xl shadow-xl" 
                 alt="Fabric"
                 referrerPolicy="no-referrer"
@@ -60,7 +60,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                src={pexelsPhoto(6620823, 800)} 
+                src={pexelsPhoto(3739748, 800)} 
                 className="w-full rounded-2xl shadow-xl" 
                 alt="Design"
                 referrerPolicy="no-referrer"
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                src={pexelsPhoto(6620824, 800)} 
+                src={pexelsPhoto(6626903, 800)} 
                 className="w-full rounded-2xl shadow-2xl" 
                 alt="Production"
                 referrerPolicy="no-referrer"

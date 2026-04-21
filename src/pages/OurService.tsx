@@ -42,14 +42,14 @@ export default function OurService() {
       <section className="relative py-24 bg-secondary overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url('${banners.tailoring}')` }}
+          style={{ backgroundImage: `url('${banners.workshop}')` }}
         />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-tighter">Our Services</h1>
           <div className="flex justify-center items-center gap-2 text-white/70 text-sm font-bold uppercase tracking-widest">
              <a href="/" className="hover:text-primary transition-colors">Home</a>
              <span>/</span>
-             <span className="text-white">Our Service</span>
+             <span className="text-white">Our Services</span>
           </div>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function OurService() {
                 <div className="lg:w-1/2">
                    <div className="relative">
                       <img 
-                        src={pexelsPhoto(6620820, 1200)} 
+                        src={pexelsPhoto(3738088, 1200)} 
                         className="rounded-3xl shadow-2xl" 
                         alt="Support"
                         referrerPolicy="no-referrer"

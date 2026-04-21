@@ -3,15 +3,15 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 const complianceLogos = [
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/Amfori-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.jpg',
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/sedex-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/gots-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/rws-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.jpg',
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/recycled_logo-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png'
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/Amfori-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.jpg', // BSCI
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/sedex-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png', // SEDEX
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/accord-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/ics-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.jpg',
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/recycled_logo-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
+  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/organic-rarx07t93yve94xarsyzz3hgv7vedenkoq9a756bcw.jpg'
 ];
 
 const membershipLogos = [
-  'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/bgmea-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
   'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/bgba-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png'
 ];
 

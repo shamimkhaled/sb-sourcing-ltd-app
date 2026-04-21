@@ -72,7 +72,7 @@ export default function Footer() {
                 </div>
                 <div className="text-gray-400 text-sm">
                   <p className="font-bold text-white mb-1">Corporate Office</p>
-                  House # 159/A/1, Road # 3, Mohammadia Housing Limited, Mohammedpur, Dhaka- 1207, Bangladesh
+                  House # 159/A/1, Road # 3, Mohammadia Housing Limited, Mohammadpur, Dhaka- 1207, Bangladesh
                 </div>
               </li>
               <li className="flex gap-4">
@@ -90,7 +90,7 @@ export default function Footer() {
                 </div>
                 <div className="text-gray-400 text-sm">
                   <p className="font-bold text-white mb-1">Email Support</p>
-                  shopon@sbsourcing-bd.com
+                  sbsourcingltdbd@gmail.com
                 </div>
               </li>
             </ul>

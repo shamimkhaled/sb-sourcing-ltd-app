@@ -7,7 +7,6 @@ import ServicesGrid from '../components/ServicesGrid';
 import ContactCTA from '../components/ContactCTA';
 import ContactForm from '../components/ContactForm';
 import Testimonials from '../components/Testimonials';
-import NewsCarousel from '../components/NewsCarousel';
 import LogosSlider from '../components/LogosSlider';
 
 export default function Home() {
@@ -22,10 +21,9 @@ export default function Home() {
       <ContactCTA />
       <ContactForm />
       <Testimonials />
-      <NewsCarousel />
       <LogosSlider title="Our Compliance" type="compliance" />
       <div className="bg-white py-12">
-        <LogosSlider title="Our Membership" type="membership" />
+        <LogosSlider title="Our Membership only BGBA" type="membership" />
       </div>
     </div>
   );

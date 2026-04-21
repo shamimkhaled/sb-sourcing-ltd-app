@@ -82,10 +82,10 @@ export default function Navbar() {
         <div className="container mx-auto px-4 flex justify-between items-center whitespace-nowrap">
           <div className="flex gap-6">
             <span className="flex items-center gap-1"><Phone size={14} className="text-primary" /> +88 01619 153138</span>
-            <span className="flex items-center gap-1"><Mail size={14} className="text-primary" /> shopon@sbsourcing-bd.com</span>
+            <span className="flex items-center gap-1"><Mail size={14} className="text-primary" /> sbsourcingltdbd@gmail.com</span>
           </div>
           <div className="hidden md:flex items-center gap-1">
-            <MapPin size={14} className="text-primary" /> Mohammadia Housing Limited, Mohammedpur, Dhaka
+            <MapPin size={14} className="text-primary" /> Mohammadia Housing Limited, Mohammadpur, Dhaka
           </div>
         </div>
       </div>

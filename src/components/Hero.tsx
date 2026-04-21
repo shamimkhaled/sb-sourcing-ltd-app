@@ -26,7 +26,7 @@ const slides = [
 
 export default function Hero() {
   return (
-    <section className="relative h-[600px] lg:h-[90vh]">
+    <section className="relative h-[620px] lg:h-[88vh] min-h-[560px]">
       <Swiper
         modules={[Navigation, Autoplay, EffectFade]}
         effect="fade"
@@ -37,22 +37,26 @@ export default function Hero() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-full flex items-center justify-center overflow-hidden">
+            <div className="relative h-full overflow-hidden">
               <img
                 src={slide.image}
                 className="absolute inset-0 w-full h-full object-cover"
                 alt={slide.title}
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute inset-0 bg-black/40" />
-              
-              <div className="container mx-auto px-4 relative z-10">
-                <div className="max-w-3xl bg-white/90 backdrop-blur-sm p-8 lg:p-12 border-l-[20px] border-primary ml-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+
+              <div className="container mx-auto px-4 h-full relative z-10 flex items-center">
+                <div className="max-w-3xl">
+                  <span className="inline-block mb-4 text-white/80 text-xs font-bold uppercase tracking-[0.3em]">
+                    Apparel Sourcing Partner
+                  </span>
                   <motion.h3 
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-primary font-bold text-xl lg:text-2xl uppercase tracking-[0.2em] mb-4"
+                    className="text-primary font-bold text-lg lg:text-2xl uppercase tracking-[0.2em] mb-4"
                   >
                     {slide.title}
                   </motion.h3>
@@ -61,7 +65,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-secondary text-3xl lg:text-5xl font-black mb-8 leading-tight"
+                    className="text-white text-3xl sm:text-4xl lg:text-6xl font-black mb-8 leading-[1.15]"
                   >
                     {slide.description}
                   </motion.h1>
@@ -73,7 +77,7 @@ export default function Hero() {
                   >
                     <Link
                       to={slide.link}
-                      className="inline-block bg-primary hover:bg-secondary text-white px-10 py-4 rounded-sm font-bold uppercase transition-all shadow-xl"
+                      className="inline-flex items-center justify-center bg-primary hover:bg-red-700 text-white px-8 lg:px-11 py-4 rounded-md font-bold uppercase tracking-wide text-sm transition-all shadow-xl hover:shadow-primary/30"
                     >
                       {slide.buttonText}
                     </Link>
@@ -88,20 +92,28 @@ export default function Hero() {
       <style>{`
         .swiper-button-next, .swiper-button-prev {
           color: white;
-          background: rgba(194, 11, 11, 0.8);
-          width: 50px;
-          height: 100px;
-          margin-top: -50px;
-          opacity: 0;
-          transition: all 0.3s;
+          background: rgba(0, 0, 0, 0.35);
+          backdrop-filter: blur(3px);
+          width: 46px;
+          height: 46px;
+          border-radius: 9999px;
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          margin-top: -23px;
+          opacity: 0.85;
+          transition: all 0.25s;
         }
-        .group:hover .swiper-button-next, 
-        .group:hover .swiper-button-prev {
-          opacity: 1;
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+          background: rgba(194, 11, 11, 0.9);
+          border-color: rgba(255, 255, 255, 0.45);
         }
-        .swiper-button-next { border-radius: 5px 0 0 5px; right: 0; }
-        .swiper-button-prev { border-radius: 0 5px 5px 0; left: 0; }
-        .swiper-button-next:after, .swiper-button-prev:after { font-size: 20px; font-weight: bold; }
+        .swiper-button-next { right: 20px; }
+        .swiper-button-prev { left: 20px; }
+        .swiper-button-next:after, .swiper-button-prev:after { font-size: 14px; font-weight: 900; }
+        @media (max-width: 1023px) {
+          .swiper-button-next, .swiper-button-prev {
+            display: none;
+          }
+        }
       `}</style>
     </section>
   );

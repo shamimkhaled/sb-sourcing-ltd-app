@@ -34,7 +34,7 @@ export default function Capabilities() {
           <div className="max-w-4xl mx-auto mb-20 text-center">
             <h2 className="text-4xl font-black text-secondary mb-8">Production Capacity & Expertise</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              With a network of more than <strong className="text-primary text-2xl">55+</strong> manufacturing factories for our regular production, 
+              With a network of more than <strong className="text-primary text-2xl">20+</strong> manufacturing factories for our regular production, 
               we boast an impressive product capacity across all segments.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function Capabilities() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute -bottom-10 -left-10 bg-primary p-8 rounded-2xl shadow-xl text-white max-w-xs">
-                   <span className="text-5xl font-black block mb-2 pointer-events-none">55+</span>
+                   <span className="text-5xl font-black block mb-2 pointer-events-none">20+</span>
                    <span className="text-sm font-bold uppercase tracking-widest opacity-80">Manufacturing Factory Network</span>
                 </div>
              </div>

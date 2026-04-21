@@ -35,7 +35,7 @@ export default function ChairmanMessage() {
                   alt="Salah Uddin, Owner and CEO, S.B Sourcing"
                 />
                 <div className="absolute bottom-10 right-10 bg-primary p-6 text-white z-20 rounded-sm shadow-xl">
-                   <h4 className="text-2xl font-black italic">Salah Uddin</h4>
+                   <h4 className="text-2xl font-black italic">Salah Uddin (Shopon)</h4>
                    <p className="text-xs font-bold uppercase tracking-widest text-white/70">Owner/CEO, S.B Sourcing</p>
                 </div>
              </div>

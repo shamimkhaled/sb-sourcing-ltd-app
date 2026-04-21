@@ -19,7 +19,7 @@ const news = [
     excerpt: 'Exploring the latest designs and fabrics that will dominate the knitwear market next season...',
     date: 'Nov 06, 2025',
     author: 'Designer',
-    image: banners.logisticsApparel
+    image: banners.sewingFloor
   },
   {
     title: 'S.B Sourcing Wins Quality Award',

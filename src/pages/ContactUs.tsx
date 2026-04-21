@@ -38,7 +38,7 @@ export default function ContactUs() {
                    <MapPin size={32} />
                 </div>
                 <h3 className="text-xl font-black mb-4 uppercase italic">Our Address</h3>
-                <p className="font-bold">House # 159/A/1, Road # 3, Mohammadia Housing Limited, Mohammedpur, Dhaka- 1207, Bangladesh</p>
+                <p className="font-bold">House # 159/A/1, Road # 3, Mohammadia Housing Limited, Mohammadpur, Dhaka- 1207, Bangladesh</p>
              </div>
 
              <div className="bg-[#fcf8f5] p-10 rounded-2xl border-b-4 border-primary text-center">
@@ -46,7 +46,7 @@ export default function ContactUs() {
                    <Mail size={32} />
                 </div>
                 <h3 className="text-xl font-black text-secondary mb-4 uppercase italic">Email Support</h3>
-                <p className="text-gray-600 font-bold">shopon@sbsourcing-bd.com</p>
+                <p className="text-gray-600 font-bold">sbsourcingltdbd@gmail.com</p>
                 <p className="text-gray-400 text-sm">We'll respond within 24 hours</p>
              </div>
           </div>
