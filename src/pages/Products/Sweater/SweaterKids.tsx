@@ -1,11 +1,11 @@
 import ProductGallery from '../../../components/ProductGallery';
-import { pexelsPhoto, productShowcaseIds } from '../../../constants/stockImages';
+import { productCategoryImages } from '../../../constants/stockImages';
 
 const products = [
   {
     id: 91,
     title: 'Kids Sweater 01',
-    image: pexelsPhoto(productShowcaseIds.sweaterKids[0], 800),
+    image: productCategoryImages.sweaterKids[0],
   },
 ];
 

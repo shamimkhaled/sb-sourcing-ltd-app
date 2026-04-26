@@ -1,11 +1,11 @@
 import ProductGallery from '../../../components/ProductGallery';
-import { pexelsPhoto, productShowcaseIds } from '../../../constants/stockImages';
+import { productCategoryImages } from '../../../constants/stockImages';
 
 const products = [
   {
     id: 81,
     title: "Women's Sweater 01",
-    image: pexelsPhoto(productShowcaseIds.sweaterWomens[0], 800),
+    image: productCategoryImages.sweaterWomens[0],
   },
 ];
 

@@ -11,6 +11,10 @@ export function unsplashPhoto(photoId: string, width: number) {
   return `https://images.unsplash.com/photo-${photoId}?auto=format&fit=crop&w=${width}&q=80`;
 }
 
+export function unsplashDownloadPhoto(shortId: string, width: number) {
+  return `https://unsplash.com/photos/${shortId}/download?force=true&w=${width}`;
+}
+
 /** Wide hero / page banner backgrounds */
 export const banners = {
   apparelRetail: unsplashPhoto('1441986300917-64674bd600d8', 1920),
@@ -33,15 +37,38 @@ export const testimonialPortraits = {
   c: unsplashPhoto('1573496359142-b8d87734a5a2', 200),
 } as const;
 
-/** Product gallery / category showcase — coordinated apparel shots (Pexels) */
-export const productShowcaseIds = {
-  knitMens: [6626869, 6626870, 6626872, 6626878, 6626881, 6626883, 6626884, 6626886],
-  knitWomens: [6626887, 6626888, 6626890, 6626891],
-  knitKids: [6626892, 6626893],
-  wovenMens: [6626894, 6626895],
-  wovenWomens: [6626896, 6626897],
-  wovenKids: [6626898],
-  sweaterMens: [6626900],
-  sweaterWomens: [6626901],
-  sweaterKids: [6626902],
+/** Product gallery / category showcase — shirt/blouse/sleepwear style product imagery */
+export const productCategoryImages = {
+  knitMens: [
+    unsplashDownloadPhoto('hMMXhKSZk7k', 900),
+    unsplashDownloadPhoto('N0ke5zChVBU', 900),
+    unsplashDownloadPhoto('vcTKFYNZop4', 900),
+    unsplashDownloadPhoto('Iawbgbj7jmU', 900),
+    unsplashDownloadPhoto('xbFtknoQG_Y', 900),
+    unsplashDownloadPhoto('tyv3bhizAx8', 900),
+    unsplashDownloadPhoto('7jQrdTP2eu4', 900),
+    unsplashDownloadPhoto('2UTk-Nip5aM', 900),
+  ],
+  knitWomens: [
+    unsplashDownloadPhoto('gbq6pdUX6EY', 900),
+    unsplashDownloadPhoto('ssE2sYVt-xs', 900),
+    unsplashDownloadPhoto('H0-Cn6I2FSg', 900),
+    unsplashDownloadPhoto('Hm2UqlVTBnc', 900),
+  ],
+  knitKids: [
+    unsplashDownloadPhoto('A3MleA0jtoE', 900),
+    unsplashDownloadPhoto('xXJ6utyoSw0', 900),
+  ],
+  wovenMens: [
+    unsplashDownloadPhoto('hMMXhKSZk7k', 900),
+    unsplashDownloadPhoto('dlxLGIy-2VU', 900),
+  ],
+  wovenWomens: [
+    unsplashDownloadPhoto('QoqkhOrfpVU', 900),
+    unsplashDownloadPhoto('OYYE4g-I5ZQ', 900),
+  ],
+  wovenKids: [unsplashDownloadPhoto('A3MleA0jtoE', 900)],
+  sweaterMens: [unsplashDownloadPhoto('HKAZ-k4h2NE', 900)],
+  sweaterWomens: [unsplashDownloadPhoto('AqcgORY1aiM', 900)],
+  sweaterKids: [unsplashDownloadPhoto('TYXCnTHDqHk', 900)],
 } as const;

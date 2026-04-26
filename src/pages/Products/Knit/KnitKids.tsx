@@ -1,12 +1,12 @@
 import ProductGallery from '../../../components/ProductGallery';
-import { pexelsPhoto, productShowcaseIds } from '../../../constants/stockImages';
+import { productCategoryImages } from '../../../constants/stockImages';
 
 const titles = ['Kids Knit 01', 'Kids Knit 02'];
 
 const products = titles.map((title, i) => ({
   id: 31 + i,
   title,
-  image: pexelsPhoto(productShowcaseIds.knitKids[i], 800),
+  image: productCategoryImages.knitKids[i],
 }));
 
 export default function KnitKids() {
