@@ -46,7 +46,7 @@ export default function ContactUs() {
                    <Mail size={32} />
                 </div>
                 <h3 className="text-xl font-black text-secondary mb-4 uppercase italic">Email Support</h3>
-                <p className="text-gray-600 font-bold">sbsourcingltdbd@gmail.com</p>
+                <p className="text-gray-600 font-bold">sbsourcingltdbd@gmail.com</p>\n                <p className="text-gray-600 font-bold">shopon@sbsourcing-bd.com</p>
                 <p className="text-gray-400 text-sm">We'll respond within 24 hours</p>
              </div>
           </div>

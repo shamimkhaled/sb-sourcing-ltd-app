@@ -7,22 +7,29 @@ import { testimonialPortraits } from '../constants/stockImages';
 
 const feedback = [
   {
-    name: 'Stive Jhonson',
-    role: 'Procurement Manager',
-    feedback: 'Excellent service and product quality. S.B Sourcing has been our reliable partner for over 5 years. Their attention to detail in quality control is unmatched.',
+    name: 'G. Basta',
+    role: 'CEO,  Apparels Business, Poland',
+    feedback: 'Excellent service and product quality. S.B Sourcing has been our reliable partner for over 10 years. Their attention to detail in quality control is unmatched.',
     image: testimonialPortraits.a
   },
   {
-    name: 'Alina Lora',
-    role: 'Fashion Designer',
+    name: 'Wendy',
+    role: 'Owner, Apparels Business, Netherlands',
     feedback: 'The sampling process is very efficient. They understand our design requirements perfectly and delivery high-quality samples within the promised timeline.',
     image: testimonialPortraits.b
   },
   {
-    name: 'Donald Frew',
-    role: 'Retail Owner',
+    name: 'Audrey',
+    role: 'Product Manager, Apparels, France',
     feedback: 'We highly recommend S.B Sourcing for their professional approach and deep knowledge of the garment industry in Bangladesh. They make sourcing trouble-free.',
     image: testimonialPortraits.c
+  },
+
+  {
+    name: 'MOO',
+    role: 'Owner Manager, Thailand',
+    feedback: 'We highly recommend S.B Sourcing for their professional approach and deep knowledge of the garment industry in Bangladesh. They make sourcing trouble-free.',
+    image: testimonialPortraits.a
   }
 ];
 

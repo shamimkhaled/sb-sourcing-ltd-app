@@ -21,7 +21,7 @@ export default function Home() {
       <ContactCTA />
       <ContactForm />
       <Testimonials />
-      <LogosSlider title="Our Compliance" type="compliance" />
+      <LogosSlider title="Compliance & Certifications" type="compliance" />
       <div className="bg-white py-12">
         <LogosSlider title="Our Membership only BGBA" type="membership" />
       </div>

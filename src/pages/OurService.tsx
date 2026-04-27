@@ -10,7 +10,7 @@ const fullServices = [
   },
   {
     title: 'Sourcing',
-    desc: 'S.B Sourcing maintains strong exclusive relationships with many of the yarn and fabric mills and the accessories suppliers locally and globally. Our sourcing network ensures premium materials at the most competitive costs for our clients.',
+    desc: 'S.B Sourcing maintains strong exclusive relationships with yarn and fabric mills plus accessories suppliers locally and globally. Our sourcing service includes factory sourcing, social audit support, inline and final inspection, QC support, testing coordination, and shipping follow-up to ensure premium quality at competitive cost.',
     icon: <Search size={48} />
   },
   {

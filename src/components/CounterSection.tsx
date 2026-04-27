@@ -4,21 +4,21 @@ import { useRef, useState, useEffect } from 'react';
 
 const stats = [
   {
-    value: 50,
+    value: 20,
     suffix: '+',
-    label: 'World wide Business Automation',
+    label: 'Years Of Industry Experience',
     icon: <Globe size={40} />
   },
   {
-    value: 20,
+    value: 10,
     suffix: 'K',
-    label: 'World wide Business Partners',
+    label: 'Styles Developed & Delivered',
     icon: <Users size={40} />
   },
   {
     value: 30,
-    suffix: '%',
-    label: 'World wide Business Profit',
+    suffix: '+',
+    label: 'Global Buying Partners',
     icon: <TrendingUp size={40} />
   }
 ];

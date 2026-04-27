@@ -90,7 +90,7 @@ export default function Footer() {
                 </div>
                 <div className="text-gray-400 text-sm">
                   <p className="font-bold text-white mb-1">Email Support</p>
-                  sbsourcingltdbd@gmail.com
+                  sbsourcingltdbd@gmail.com                 <br />                shopon@sbsourcing-bd.com
                 </div>
               </li>
             </ul>

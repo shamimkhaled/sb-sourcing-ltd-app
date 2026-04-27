@@ -45,8 +45,8 @@ export default function CompanyProfile() {
                     such as <strong className="text-secondary italic">Le Cocotier S.A-France, Sortmund-Poland, and Brand2Love-Netherlands</strong>.
                   </p>
                   <p>
-                    We specialize in Men's and Ladies woven bottoms (Trousers, Shorts), Jackets, and Shirts. 
-                    In the Knit segment, we offer T-shirts, Polo shirts, Sweatshirts, and Hoodies.
+                    We specialize in Men's and Ladies woven bottoms (Trousers, Shorts), Jackets, and Shirts, denim, non-denim, workwear, sportswear, and uniforms.
+                    In the Knit segment, we offer T-shirts, Polo shirts, Sweatshirts, and Hoodies, cloth and jute bags, caps, and shoes.
                   </p>
                </div>
 
