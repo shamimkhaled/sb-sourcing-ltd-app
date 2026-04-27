@@ -1,6 +1,7 @@
 import { Target, ShieldCheck, Smile } from 'lucide-react';
 import { motion } from 'motion/react';
 import { pexelsPhoto } from '../constants/stockImages';
+import customerSatisfactionImage from '../assets/img/customer-satisfaction.jpg';
 
 const goals = [
   {
@@ -18,7 +19,7 @@ const goals = [
   {
     title: 'Enhance Customer Satisfaction',
     icon: <Smile size={40} />,
-    image: pexelsPhoto(7671169, 900),
+    image: customerSatisfactionImage,
     delay: 0.2
   }
 ];

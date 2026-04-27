@@ -12,15 +12,10 @@ import MissionVision from './pages/About/MissionVision';
 import ChairmanMessage from './pages/About/ChairmanMessage';
 import Capabilities from './pages/About/Capabilities';
 import OurService from './pages/OurService';
-import KnitMens from './pages/Products/Knit/KnitMens';
-import KnitWomens from './pages/Products/Knit/KnitWomens';
-import KnitKids from './pages/Products/Knit/KnitKids';
-import WovenMens from './pages/Products/Woven/WovenMens';
-import WovenWomens from './pages/Products/Woven/WovenWomens';
-import WovenKids from './pages/Products/Woven/WovenKids';
-import SweaterMens from './pages/Products/Sweater/SweaterMens';
-import SweaterWomens from './pages/Products/Sweater/SweaterWomens';
-import SweaterKids from './pages/Products/Sweater/SweaterKids';
+import Knits from './pages/Products/Knits';
+import Woven from './pages/Products/Woven';
+import Sweater from './pages/Products/Sweater';
+import Uniforms from './pages/Products/Uniforms';
 import Machineries from './pages/Machineries';
 import ContactUs from './pages/ContactUs';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -41,15 +36,21 @@ export default function App() {
             <Route path="/chairman-md-message" element={<ChairmanMessage />} />
             <Route path="/our-capabilities" element={<Capabilities />} />
             <Route path="/our-service" element={<OurService />} />
-            <Route path="/knit-mens" element={<KnitMens />} />
-            <Route path="/knit-womens" element={<KnitWomens />} />
-            <Route path="/knit-kids" element={<KnitKids />} />
-            <Route path="/woven-mens" element={<WovenMens />} />
-            <Route path="/woven-womens" element={<WovenWomens />} />
-            <Route path="/woven-kids" element={<WovenKids />} />
-            <Route path="/sweater-mens" element={<SweaterMens />} />
-            <Route path="/sweater-womens" element={<SweaterWomens />} />
-            <Route path="/sweater-kids" element={<SweaterKids />} />
+            <Route path="/knits" element={<Knits />} />
+            <Route path="/woven" element={<Woven />} />
+            <Route path="/sweater" element={<Sweater />} />
+            <Route path="/uniforms" element={<Uniforms />} />
+
+            {/* Legacy product URLs kept for backward compatibility */}
+            <Route path="/knit-mens" element={<Knits />} />
+            <Route path="/knit-womens" element={<Knits />} />
+            <Route path="/knit-kids" element={<Knits />} />
+            <Route path="/woven-mens" element={<Woven />} />
+            <Route path="/woven-womens" element={<Woven />} />
+            <Route path="/woven-kids" element={<Woven />} />
+            <Route path="/sweater-mens" element={<Sweater />} />
+            <Route path="/sweater-womens" element={<Sweater />} />
+            <Route path="/sweater-kids" element={<Sweater />} />
             <Route path="/production-machineries" element={<Machineries />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>

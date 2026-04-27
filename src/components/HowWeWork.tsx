@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import howWeWorkProcess from '../assets/img/how-we-work-process.png';
 
 export default function HowWeWork() {
   return (
@@ -16,10 +17,9 @@ export default function HowWeWork() {
               {/* This mimics the circular flow image from the reference */}
               <div className="relative w-full max-w-md mx-auto aspect-square rounded-full border-[20px] border-gray-50 flex items-center justify-center p-8 bg-white shadow-2xl">
                  <img 
-                    src="https://www.lamia-fashion.com/wp-content/uploads/2025/07/how_we_work.png" 
+                    src={howWeWorkProcess}
                     alt="Process Flow" 
                     className="w-full h-full object-contain"
-                    referrerPolicy="no-referrer"
                  />
                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white font-black text-xl shadow-xl animate-bounce">18+ <br/><span className="text-[8px] uppercase">Years</span></div>
               </div>

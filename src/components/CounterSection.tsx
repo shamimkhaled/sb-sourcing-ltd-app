@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react';
 
 const stats = [
   {
-    value: 20,
+    value: 18,
     suffix: '+',
     label: 'Years Of Industry Experience',
     icon: <Globe size={40} />
@@ -12,13 +12,13 @@ const stats = [
   {
     value: 10,
     suffix: 'K',
-    label: 'Styles Developed & Delivered',
+    label: 'Orders Successfully Delivered',
     icon: <Users size={40} />
   },
   {
     value: 30,
     suffix: '+',
-    label: 'Global Buying Partners',
+    label: 'Production & Cost Efficiency',
     icon: <TrendingUp size={40} />
   }
 ];

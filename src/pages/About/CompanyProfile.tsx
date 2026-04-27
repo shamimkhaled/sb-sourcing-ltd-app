@@ -91,7 +91,7 @@ export default function CompanyProfile() {
                      </div>
                      <div className="flex justify-between">
                         <span className="text-white/60">Established</span>
-                        <span>2014</span>
+                        <span>2008</span>
                      </div>
                      <div className="flex justify-between">
                         <span className="text-white/60">Owner/CEO</span>

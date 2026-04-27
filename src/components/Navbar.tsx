@@ -21,33 +21,10 @@ const navItems = [
     name: 'Products',
     path: '#',
     children: [
-      {
-        name: 'Knit',
-        path: '#',
-        children: [
-          { name: 'Knit – Men’s', path: '/knit-mens' },
-          { name: 'Knit – Women’s', path: '/knit-womens' },
-          { name: 'Knit – Kid’s', path: '/knit-kids' },
-        ],
-      },
-      {
-        name: 'Woven',
-        path: '#',
-        children: [
-          { name: 'Woven – Men’s', path: '/woven-mens' },
-          { name: 'Woven – Women’s', path: '/woven-womens' },
-          { name: 'Woven – Kid’s', path: '/woven-kids' },
-        ],
-      },
-      {
-        name: 'Sweater',
-        path: '#',
-        children: [
-          { name: 'Sweater – Men’s', path: '/sweater-mens' },
-          { name: 'Sweater – Women’s', path: '/sweater-womens' },
-          { name: 'Sweater – Kid’s', path: '/sweater-kids' },
-        ],
-      },
+      { name: 'Knits', path: '/knits' },
+      { name: 'Woven', path: '/woven' },
+      { name: 'Sweater', path: '/sweater' },
+      { name: 'Uniforms', path: '/uniforms' },
     ],
   },
   { name: 'Machineries', path: '/production-machineries' },
