@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { pexelsPhoto } from '../constants/stockImages';
+import aboutProductsFlatlay from '../assets/img/about-products-flatlay.png';
+import knitMensTshirt01 from '../assets/img/products/mens/knit-mens-tshirt-01.png';
+import knitMensCargo05 from '../assets/img/products/mens/knit-mens-casual-05-cargo.png';
+import knitMensDenim07 from '../assets/img/products/mens/knit-mens-premium-07-denim.png';
 
 export default function AboutSection() {
   return (
@@ -40,19 +43,17 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                src={pexelsPhoto(7213441, 800)} 
+                src={aboutProductsFlatlay}
                 className="w-full rounded-2xl shadow-2xl" 
-                alt="Working"
-                referrerPolicy="no-referrer"
+                alt="Apparel flatlay products"
                />
                <motion.img 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                src={pexelsPhoto(5632402, 800)} 
+                src={knitMensTshirt01}
                 className="w-full rounded-2xl shadow-xl" 
-                alt="Fabric"
-                referrerPolicy="no-referrer"
+                alt="Men's knit t-shirt"
                />
              </div>
              <div className="space-y-4 pt-12">
@@ -60,19 +61,17 @@ export default function AboutSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                src={pexelsPhoto(3739748, 800)} 
+                src={knitMensCargo05}
                 className="w-full rounded-2xl shadow-xl" 
-                alt="Design"
-                referrerPolicy="no-referrer"
+                alt="Men's cargo trouser"
                />
                <motion.img 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                src={pexelsPhoto(6626903, 800)} 
+                src={knitMensDenim07}
                 className="w-full rounded-2xl shadow-2xl" 
-                alt="Production"
-                referrerPolicy="no-referrer"
+                alt="Men's denim pant"
                />
              </div>
           </div>

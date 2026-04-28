@@ -1,22 +1,71 @@
+import { useState } from 'react';
 import { User, Mail, Phone, FileText } from 'lucide-react';
 import { motion } from 'motion/react';
-import { pexelsPhoto } from '../constants/stockImages';
+import callbackImage from '../assets/img/request-callback.png';
+
+type ContactFormData = {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+};
 
 export default function ContactForm() {
+  const [formData, setFormData] = useState<ContactFormData>({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const handleChange = (field: keyof ContactFormData, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus('sending');
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/shopon@sbsourcing-bd.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: 'New Callback Request - S.B Sourcing',
+          _template: 'table',
+          _captcha: 'false',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      });
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="w-full lg:w-1/2 relative">
              <img 
-                src={pexelsPhoto(3739748, 1200)} 
-                className="w-full h-full object-cover rounded-2xl shadow-2xl" 
-                alt="Support"
-                referrerPolicy="no-referrer"
+                src={callbackImage}
+                className="w-full aspect-[4/3] lg:aspect-auto lg:h-full object-contain bg-[#f4f7fb] rounded-2xl shadow-2xl p-2 sm:p-4" 
+                alt="Request for callback"
              />
-             <div className="absolute top-10 right-10 w-40 h-40 bg-primary/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-white p-6 text-center shadow-2xl border-4 border-white">
-                <span className="text-3xl font-black italic">24/7</span>
-                <span className="text-[10px] font-bold uppercase tracking-widest leading-tight">Support Available</span>
+             <div className="absolute top-4 right-4 sm:top-8 sm:right-8 w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 bg-primary/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-white p-3 sm:p-4 lg:p-6 text-center shadow-2xl border-4 border-white">
+                <span className="text-lg sm:text-2xl lg:text-3xl font-black italic">24/7</span>
+                <span className="text-[8px] sm:text-[9px] lg:text-[10px] font-bold uppercase tracking-widest leading-tight">Support Available</span>
              </div>
           </div>
 
@@ -30,12 +79,15 @@ export default function ContactForm() {
                   <h2 className="text-3xl lg:text-4xl font-black">Request for a Callback</h2>
                </div>
 
-               <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
+               <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
                   <div className="relative group">
                     <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 group-focus-within:text-white transition-colors" size={18} />
                     <input 
                        type="text" 
+                       value={formData.name}
+                       onChange={(e) => handleChange('name', e.target.value)}
                        placeholder="Your Name" 
+                       required
                        className="w-full bg-white/10 border border-white/20 rounded-sm py-4 pl-12 pr-4 text-white placeholder:text-white/40 focus:outline-none focus:border-white focus:bg-white/20 transition-all font-medium"
                     />
                   </div>
@@ -44,7 +96,10 @@ export default function ContactForm() {
                     <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 group-focus-within:text-white transition-colors" size={18} />
                     <input 
                        type="email" 
+                       value={formData.email}
+                       onChange={(e) => handleChange('email', e.target.value)}
                        placeholder="Your Email" 
+                       required
                        className="w-full bg-white/10 border border-white/20 rounded-sm py-4 pl-12 pr-4 text-white placeholder:text-white/40 focus:outline-none focus:border-white focus:bg-white/20 transition-all font-medium"
                     />
                   </div>
@@ -53,7 +108,10 @@ export default function ContactForm() {
                     <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 group-focus-within:text-white transition-colors" size={18} />
                     <input 
                        type="text" 
+                       value={formData.phone}
+                       onChange={(e) => handleChange('phone', e.target.value)}
                        placeholder="Your Phone" 
+                       required
                        className="w-full bg-white/10 border border-white/20 rounded-sm py-4 pl-12 pr-4 text-white placeholder:text-white/40 focus:outline-none focus:border-white focus:bg-white/20 transition-all font-medium"
                     />
                   </div>
@@ -62,7 +120,10 @@ export default function ContactForm() {
                     <FileText className="absolute left-4 top-5 text-white/50 group-focus-within:text-white transition-colors" size={18} />
                     <textarea 
                        rows={4}
+                       value={formData.message}
+                       onChange={(e) => handleChange('message', e.target.value)}
                        placeholder="Your Message" 
+                       required
                        className="w-full bg-white/10 border border-white/20 rounded-sm py-4 pl-12 pr-4 text-white placeholder:text-white/40 focus:outline-none focus:border-white focus:bg-white/20 transition-all font-medium resize-none"
                     />
                   </div>
@@ -70,10 +131,21 @@ export default function ContactForm() {
                   <motion.button 
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    disabled={status === 'sending'}
                     className="w-full bg-secondary text-white py-5 rounded-sm font-black uppercase tracking-widest text-sm shadow-xl hover:bg-black transition-all"
                   >
-                    Send Request
+                    {status === 'sending' ? 'Sending...' : 'Send Request'}
                   </motion.button>
+                  {status === 'success' && (
+                    <p className="text-green-100 font-semibold text-sm">
+                      Request sent successfully to shopon@sbsourcing-bd.com.
+                    </p>
+                  )}
+                  {status === 'error' && (
+                    <p className="text-red-100 font-semibold text-sm">
+                      Something went wrong. Please try again.
+                    </p>
+                  )}
                </form>
             </div>
           </div>

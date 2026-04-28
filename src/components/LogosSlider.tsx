@@ -5,6 +5,7 @@ import wrapLogo from '../assets/img/compilance-logo/wrap-logo-removebg-preview.p
 import rscLogo from '../assets/img/compilance-logo/rsc-logo.png';
 import isoLogo from '../assets/img/compilance-logo/ISO-logo-removebg-preview.png';
 import oekoTexLogo from '../assets/img/compilance-logo/oekotex-logo-removebg-preview.png';
+import bgbaLogo from '../assets/img/compilance-logo/bgba-logo.png';
 
 const complianceLogos = [
   { name: 'BSCI Certification', src: bsciLogo },
@@ -18,7 +19,7 @@ const complianceLogos = [
 const membershipLogos = [
   {
     name: 'BGBA Membership',
-    src: 'https://www.lamia-fashion.com/wp-content/uploads/elementor/thumbs/bgba-rarx08r3aswokqvxmbdmjl8xglqrl3rb0uwrof4x6o.png',
+    src: bgbaLogo,
   },
 ] as const;
 
@@ -33,7 +34,7 @@ function LogoCard({ src, name }: { src: string; name: string }) {
       <img
         src={src}
         alt={name}
-        className="h-14 w-full object-contain grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105"
+        className="h-14 w-full object-contain transition-transform duration-300 group-hover:scale-105"
         loading="lazy"
         decoding="async"
       />
