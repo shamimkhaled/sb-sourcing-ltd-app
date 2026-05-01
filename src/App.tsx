@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -15,7 +15,7 @@ import OurService from './pages/OurService';
 import Knits from './pages/Products/Knits';
 import Woven from './pages/Products/Woven';
 import Sweater from './pages/Products/Sweater';
-import Uniforms from './pages/Products/Uniforms';
+import Others from './pages/Products/Others';
 import Machineries from './pages/Machineries';
 import ContactUs from './pages/ContactUs';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -39,7 +39,7 @@ export default function App() {
             <Route path="/knits" element={<Knits />} />
             <Route path="/woven" element={<Woven />} />
             <Route path="/sweater" element={<Sweater />} />
-            <Route path="/uniforms" element={<Uniforms />} />
+            <Route path="/others" element={<Others />} />
 
             {/* Legacy product URLs kept for backward compatibility */}
             <Route path="/knit-mens" element={<Knits />} />
@@ -51,6 +51,7 @@ export default function App() {
             <Route path="/sweater-mens" element={<Sweater />} />
             <Route path="/sweater-womens" element={<Sweater />} />
             <Route path="/sweater-kids" element={<Sweater />} />
+            <Route path="/uniforms" element={<Navigate to="/others" replace />} />
             <Route path="/production-machineries" element={<Machineries />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>

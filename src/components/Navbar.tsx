@@ -24,7 +24,7 @@ const navItems = [
       { name: 'Knits', path: '/knits' },
       { name: 'Woven', path: '/woven' },
       { name: 'Sweater', path: '/sweater' },
-      { name: 'Uniforms', path: '/uniforms' },
+      { name: 'Others', path: '/others' },
     ],
   },
   { name: 'Machineries', path: '/production-machineries' },
