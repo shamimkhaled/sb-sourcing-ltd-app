@@ -56,12 +56,12 @@ export default function ContactForm() {
   return (
     <section className="py-24 bg-white relative">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row gap-16">
-          <div className="w-full lg:w-1/2 relative">
-             <img 
+        <div className="flex flex-col gap-16 lg:flex-row lg:items-stretch">
+          <div className="relative flex w-full lg:w-1/2 lg:self-stretch">
+             <img
                 src={callbackImage}
-                className="w-full aspect-[4/3] lg:aspect-auto lg:h-full object-contain bg-[#f4f7fb] rounded-2xl shadow-2xl p-2 sm:p-4" 
-                alt="Request for callback"
+                className="aspect-[16/10] w-full rounded-2xl object-cover object-center shadow-2xl ring-1 ring-black/10 lg:min-h-[min(520px,100%)] lg:flex-1 lg:aspect-auto"
+                alt="Your connection to support — request a scheduled callback"
              />
              <div className="absolute top-4 right-4 sm:top-8 sm:right-8 w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 bg-primary/90 backdrop-blur-sm rounded-full flex flex-col items-center justify-center text-white p-3 sm:p-4 lg:p-6 text-center shadow-2xl border-4 border-white">
                 <span className="text-lg sm:text-2xl lg:text-3xl font-black italic">24/7</span>

@@ -56,10 +56,20 @@ export default function Navbar() {
         "bg-secondary text-white py-2 text-xs transition-all duration-300 overflow-hidden",
         isScrolled ? "h-0 opacity-0" : "h-auto opacity-100"
       )}>
-        <div className="container mx-auto px-4 flex justify-between items-center whitespace-nowrap">
-          <div className="flex gap-6">
-            <span className="flex items-center gap-1"><Phone size={14} className="text-primary" /> +88 01619 153138</span>
-            <span className="flex items-center gap-1"><Mail size={14} className="text-primary" />  shopon@sbsourcing-bd.com</span>
+        <div className="container mx-auto px-4 flex flex-wrap justify-between items-center gap-y-2 gap-x-4 text-[11px] sm:text-xs">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <span className="flex items-center gap-1 whitespace-nowrap">
+              <Phone size={14} className="text-primary shrink-0" /> +88 01619 153138
+            </span>
+            <span className="flex items-start gap-1.5">
+              <Mail size={14} className="text-primary shrink-0 mt-0.5" />
+              <span className="flex flex-col gap-0.5 min-w-0">
+                <a href="mailto:shopon@sbsourcing-bd.com" className="hover:text-primary transition-colors break-all">
+                  shopon@sbsourcing-bd.com
+                </a>
+              
+              </span>
+            </span>
           </div>
           <div className="hidden md:flex items-center gap-1">
             <MapPin size={14} className="text-primary" /> Mohammadia Housing Limited, Mohammadpur, Dhaka

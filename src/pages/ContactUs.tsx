@@ -46,7 +46,24 @@ export default function ContactUs() {
                    <Mail size={32} />
                 </div>
                 <h3 className="text-xl font-black text-secondary mb-4 uppercase italic">Email Support</h3>
-                <p className="text-gray-600 font-bold">sbsourcingltdbd@gmail.com</p>              <p className="text-gray-600 font-bold">shopon@sbsourcing-bd.com</p>
+                <div className="space-y-2 text-gray-600 font-bold">
+                  <p>
+                    <a
+                      href="mailto:shopon@sbsourcing-bd.com"
+                      className="hover:text-primary transition-colors break-all"
+                    >
+                      shopon@sbsourcing-bd.com
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="mailto:sbsourcingltdbd@gmail.com"
+                      className="hover:text-primary transition-colors break-all"
+                    >
+                      sbsourcingltdbd@gmail.com
+                    </a>
+                  </p>
+                </div>
                 <p className="text-gray-400 text-sm">We'll respond within 24 hours</p>
              </div>
           </div>

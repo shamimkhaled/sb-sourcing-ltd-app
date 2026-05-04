@@ -90,7 +90,16 @@ export default function Footer() {
                 </div>
                 <div className="text-gray-400 text-sm">
                   <p className="font-bold text-white mb-1">Email Support</p>
-                  sbsourcingltdbd@gmail.com                 <br />                shopon@sbsourcing-bd.com
+                  <p className="mb-1">
+                    <a href="mailto:shopon@sbsourcing-bd.com" className="hover:text-primary transition-colors break-all">
+                      shopon@sbsourcing-bd.com
+                    </a>
+                  </p>
+                  <p>
+                    <a href="mailto:sbsourcingltdbd@gmail.com" className="hover:text-primary transition-colors break-all">
+                      sbsourcingltdbd@gmail.com
+                    </a>
+                  </p>
                 </div>
               </li>
             </ul>
